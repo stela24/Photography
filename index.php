@@ -267,7 +267,24 @@ if(isset($_POST['Email'])){
   $email = $_POST['Email'];
   $subject =  $_POST['Subject'];
   $text = $_POST['Text'];
+//$body = '<html><body>';
+$body = "E-mail: " . $email . "\n\r";
+$body.= "Относно: " . $subject . "\n\r";
+$body.= "Текст: " . $text;
+//$body.= '</body></html>';
+include 'plugins/swiftmailer/lib/swift_required.php';
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+  ->setUsername('sdphotographysite@gmail.com')
+  ->setPassword('sd123photo');
 
+$mailer = Swift_Mailer::newInstance($transport);
+
+$message = Swift_Message::newInstance('Test Subject')
+  ->setFrom(array('sdphotographysite@gmail.com' => 'MailForm'))
+  ->setTo(array('sdphotographysite@gmail.com'))
+  ->setBody($body, 'text/plain');
+
+$result = $mailer->send($message);
 }
 ?>
     </body>
