@@ -1,0 +1,126 @@
+body {
+	font-family: 'Poiret One', cursive;
+	margin: 0;
+}
+#admin-panel {
+    background-color: #dcdcdc;
+	padding-bottom: 150px;
+}
+#admin-panel .title-container {
+	text-align: center;
+}
+#admin-panel h1 {
+    margin: 0;
+    padding: 50px 0 0;
+    text-align: left;
+    color: #3a3a3a;
+    margin-bottom: 50px;
+}
+#admin-panel .title {
+    display: inline-block;
+    margin: 30px auto;
+}
+#admin-panel .title:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #2f2f2f;
+    display: block;
+    margin-top: 10px;
+}
+#admin-panel .title-container .title h1 {
+	margin-bottom: 20px;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+select {
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'Poiret One', cursive;
+}
+#submit {
+	width: 150px;
+    height: 30px;
+    border: 1px solid #ababab;
+    color: #272727;
+    border-radius: 5px;
+    vertical-align: top;
+}
+::-webkit-file-upload-button {
+  background: transparent;
+  border: 1px solid #272727;
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  color: #272727;
+}
+
+.panel {
+	background-color: #ccc;
+	height: 100vh;
+}
+.panel-container {
+	width: 50%;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+.panel-container .title {
+    display: block;
+    margin: 30px auto;
+    width: 65px;
+}
+.panel-container .title:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #2f2f2f;
+    display: block;
+    margin-top: 10px;
+}
+.panel-container .title-container .title h1 {
+	margin-bottom: 20px;
+}
+.panel-container input {
+	display: block;
+	margin: 20px auto;
+	width: 400px;
+	height: 30px;
+	border: 1px solid #272727;
+	outline: none;
+	padding: 0 10px;
+	font-size: 16px;
+	color: #272727;
+	background-color: #fff;
+	border-radius: 5px;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: #fff;
+}
+.panel-container .panel-submit {
+	width: 400px;
+	height: 30px;
+	color: #272727;
+	border: 1px solid #272727;
+	background-color: #fff;
+	cursor: pointer;
+}
+.panel-container .panel-submit:hover {
+	color: #fff;
+	border: 1px solid #272727;
+	background: #272727;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
