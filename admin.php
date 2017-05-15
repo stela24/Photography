@@ -18,6 +18,7 @@ session_start();
               </div>
             </div>
             <div class="container">
+
                 <h1>Качване на снимка в Галерия</h1>
                 <form action="upload.php" method="post" enctype="multipart/form-data" class="formAdmin">
                     Select image to upload:
@@ -33,7 +34,12 @@ session_start();
                       <option value="width">Широчина</option>
                     </select>
                     <input type="submit" value="Upload Image" name="submit"  id="submit">
-                </form>
+                    <input type="button" value="Home" name="submit" class="panel-submit" onclick="msg()"</input>
+
+<script>
+function msg() {
+    window.location.href = "http://localhost/Photography/index.php";
+}</script>                </form>
                 <?php if(isset($_SESSION['username'])){
                             if($_SESSION['username']=='admin'){
                                 ?>
@@ -50,8 +56,12 @@ session_start();
                     <input type="submit" value="Upload Image" name="submit" id="submit">
                         <?php
                     }
+
                 }?>
             </div>
+            
+            
+            
         </div>
     </body>
     <?php }?>
