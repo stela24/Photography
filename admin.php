@@ -1,5 +1,5 @@
 <?php
-$_SESSION['username']='admin';
+session_start();
   if($_SESSION['username']=='admin'){
 ?>
 <!DOCTYPE html>
@@ -56,6 +56,3 @@ $_SESSION['username']='admin';
     </body>
     <?php }?>
 </html>
-
-
-

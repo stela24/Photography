@@ -24,7 +24,7 @@ session_start();
 
 
                 $username = 'silvia';
-                $password = 'q5w1e3';
+                $password = 'qwe123';
 
                 if(isset($_POST['username'])){
                 if($username==$_POST['username']&&$password==$_POST['passwd']){
