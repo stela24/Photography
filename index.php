@@ -26,22 +26,7 @@ session_start();
 
     </head>
     <body>
-        <?php if(isset($_SESSION['username'])){
-            if($_SESSION['username']=='admin'){
-                ?>
-                <form action="slide1.php" method="post" enctype="multipart/form-data">
-    Select image to upload to slider:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-    <select name="slideOption">
-  <option value="slide1">Слайд 1</option>
-  <option value="slide2">Слайд 2</option>
-  <option value="slide3">Слайд 3</option>
-  <option value="slide4">Слайд 4</option>
-  </select>
-                <?php
-            }
-        }?>
+        
 
   
 
