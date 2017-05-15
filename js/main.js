@@ -51,6 +51,7 @@ $(document).ready(function(){
 	$(window).load(function(){
 		var $grid = $('.grid').isotope({
 		    itemSelector: '.grid-item',
+		    percentPosition: true,
 		});
 
 		var filterFns = {

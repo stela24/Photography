@@ -484,12 +484,38 @@ h1:after {
     background-size: contain;
 }
 
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
+@media only screen and (max-width: 1024px) {
+    .section .about-container {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .section .about-image {
+        width: 80%;
+    }
+    .section .about-info {
+        display: block;
+        width: 100%;
+    }
+    .section form {
+        width: 90%;
+        border-right: 0;
+        padding: 0;
+    }
+    .section .contact-links {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .section .contact-links .contacts {
+        margin: 20px 0 10px 0;
+    }
+    .grid-item {
+        width: 50%;
+    }
 }
 
 
